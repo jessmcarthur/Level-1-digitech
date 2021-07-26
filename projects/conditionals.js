@@ -26,3 +26,61 @@ function mealPlanner() {
   }
   alert('Enjoy!')
 }
+
+function moreThan () {
+  	let checkNum =10
+  let numTwo =2
+  if (checkNum > numTwo) {
+    alert ('The number is bigger')
+  } else {
+    alert('The number is smaller')
+  }
+}
+
+function drivingAge() {
+  	let age = prompt('What is your age?')
+  age = Number(age)
+  if (typeof(age) == 'number') {
+    if (age > 0 && age < 150) {
+      if (age > 15) {
+        alert('you can drive')
+      } else { 
+        alert('you cannot drive')
+      }
+    } else {
+        alert('Error:invalid age')
+    }
+  } else {
+    alert('Error:bad input')
+  } 
+}
+
+function calculator() {
+  let firstNum = prompt ('Type a number')
+firstNum = Number (firstNum)
+let secondNum = prompt ('Type another number')
+secondNum = Number (secondNum)
+let operator = prompt ('Type a operator e.g. +')
+
+  if (operator == '+') {
+  alert(firstNum + secondNum)
+  } else if (operator == '-') {
+  alert(firstNum - secondNum)
+  } else if (operator == '*') {
+    alert (firstNum * secondNum)
+  } else if (operator == '/') {
+    alert (firstNum / secondNum)
+  }
+}
+
+function capital() {
+  let name = prompt ('What is your name?')
+let capital = prompt ('Hi ' + name + ' What is the captal of France?')
+
+if (capital == 'Paris') {
+  alert ('correct ' + name)
+
+} else if (capital != 'Paris') {
+  alert ('incorrect ' + name)
+}
+}
