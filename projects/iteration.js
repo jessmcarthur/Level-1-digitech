@@ -1,4 +1,4 @@
-function counting () {
+function counting() {
   let number =1
 while (number <= 10){
  alert (number)
@@ -6,7 +6,7 @@ while (number <= 10){
 }
 }
 
-function squareSeries () {
+function squareSeries() {
   let endNum = prompt ('What is a end number?')
 let outputSeries = ''
 let squareNum =1
@@ -18,7 +18,7 @@ squareNum +=1
 alert ('squareSeries of ' + endNum + ' is ' + outputSeries)
 }
 
-function factorial () {
+function factorial() {
   let multipliedNum = prompt('Enter a number to be multiplied') 
   let facResult = multipliedNum
   let nextMul = facResult - 1
@@ -29,7 +29,7 @@ function factorial () {
   alert('The factorial number is ' + facResult)
 }
 
-function fibonacci () {
+function fibonacci() {
   let finishNum = prompt ('Enter a number')
 let output = ''
 let currentNum =1

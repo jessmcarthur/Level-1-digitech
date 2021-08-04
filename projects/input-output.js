@@ -17,8 +17,18 @@ function maoriMihi() {
 }
 
 function nonMaoriMihi() {
+  
+  let name = prompt('What is your full name?')
+  let hometown = prompt('What is your home town?')
+  let river = prompt('What is your river/ocean/lake/bay-harbour?')
+  let mountain = prompt('What is your mountain?')
 
-}
+  alert('Tēnā koutou,')
+  alert('Kei te mihi au ki a ' + mountain + '\nKei te mihi au ki a ' + river + '\nKo Te Tiriti o Waitangi te waka,'+ '\nKo Aotearoa te iwi,')
+  alert('Nō ' + hometown + ' au,'+'\nKo ' + name + ' tōku ingoa')
+  alert('Tēnā koutou,' + '\nTēnā koutou,' + '\nTēnā koutou, katoa.')
+  
+  }
 
 function theRepeater() {
 let said = prompt ('Say something')

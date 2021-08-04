@@ -1,4 +1,4 @@
-function pupperAge () {
+function pupperAge() {
 let dogsAge = prompt ('What is your dogs age')
 dogsAge = Number (dogsAge)
 if (typeof(dogsAge) == 'number') {
@@ -18,7 +18,7 @@ if (typeof(dogsAge) == 'number') {
 }
 }
 
-function gstCalculator () {
+function gstCalculator() {
   let price = prompt ('Please enter a price')
   price = Number(price)
   
@@ -38,13 +38,13 @@ function gstCalculator () {
 } 
 }
 
-function lessonsSec () {
+function lessonsSec() {
    let lessons = prompt ('Enter a number of lessons you have had') 
   let difference = lessons *3600
   alert ('You have had ' + difference + ' seconds in your lesson')
 }
 
-function lifeRemaining () {
+function lifeRemaining() {
   let age = prompt ('What is your age')
   let difference = 82 - age
   alert ('You have ' + difference + ' years to live')

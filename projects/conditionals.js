@@ -27,7 +27,7 @@ function mealPlanner() {
   alert('Enjoy!')
 }
 
-function moreThan () {
+function moreThan2() {
   	let checkNum =10
   let numTwo =2
   if (checkNum > numTwo) {
