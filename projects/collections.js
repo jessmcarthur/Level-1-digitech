@@ -1,51 +1,7 @@
 
-
-function lesson1() {
-  let name = prompt ('What is your name?')
-  alert('We want to know if you like programming!')
-  let answer = prompt ('Do you like programming ' + name + '?')
-  alert('Great, you said ' + answer + '!')
-  alert("Let's learn some code today.")
-}
-
-function lesson2() {
-let name = prompt('What is your name?')
-let age = Number(prompt('How old are you?'))
-
-if (age > 65) {
-alert ('You can retire') 
-
-} if (age < 5) {
-alert ('You need supervision when using a computer')
-
-} if (age >= 18) {
-  alert("You're old enough to vote")
-
-} if (age !=99){
-  alert ('You are not the same age as me')
-}
-}
-
-function lesson3() {
- alert('Meal planner.')
-  alert('1. Chicken curry.')
-  alert('2. Veggie lasagne.')
-  alert('3. Burger and salad.')
-  alert('Which of these meals is your favourite? (1, 2, or 3).')
-  let answer = prompt()
-  if (answer == '1') {
-    alert('Chicken curry, coming up.')
-  } else if (answer == '2') {
-    alert('Veggie lasagne, coming up.')
-  } else {
-    alert('Burger and salad, coming up.')
-  }
-  alert('Enjoy!')
-}
-
-
-
-
+// #####################################
+// #### ----- Furure Job ----- ####
+// #####################################
 
 const jobs = [
   'astronaut',
@@ -57,29 +13,42 @@ const jobs = [
 ]
 
 function futureJob() {
-  let index = 0
+  let index = 5
 
-  alert('Your future job will be ' + jobs[5])
+  alert('Your future job will be ' + jobs[index])
 }
+
+// #####################################
+// #### ----- Subject List ----- ####
+// #####################################
 
 let subjects = [
   'English',
   'Digital Technology',
 ]
 
-function addSubject() {
-  let newSubject = 'Maths'
-
-  // add a new subject to the end of the subjects array
+function subjectList() {
+  let newSubject = 'Science'
   subjects.push(newSubject)
 }
 
-function removeSubject() {
-  let index = 0
-
-  // remove 1 subject at the index position of the subjects array
-  subjects.splice(index, 1)
+function subjectList() {
+  let subject1 = prompt ('Add a subject')
+  subjects.push (subject1)
 }
+
+function removeSubject() {
+  let index = 5
+
+  subjects.splice(index, 1)
+
+  alert ('Your subject is ' + subjectList)
+}
+
+
+// #####################################
+// #### ----- Number Search ----- ####
+// #####################################
 
 let numberArray = [
   1,
@@ -90,12 +59,100 @@ let numberArray = [
 ]
 
 function numberSearch() {
-  let searchTarget = 1
+  let searchTarget = 2
   let searchResult = false
   
   numberArray.forEach( (currentNumber) => {
+    alert(currentNumber)
     if (currentNumber == searchTarget) {
-      searchResult = true
+    searchResult = true
     }
   })
+}
+
+function showNumbers() {
+  alert("1, 100, 1000, 10000, 1234567890")
+}
+
+// #####################################
+// #### ----- Subject Details ----- ####
+// #####################################
+
+let subject = {
+  name: 'DigiTech',
+  room: 'Room 9',
+  students: 150,
+}
+
+function showSubject() {
+  alert('The subject is ' + subject.name + ' it is in room ' + subject.room + ' there are ' + subject.students + ' students')
+}
+
+function changeSubject() {
+  let newName = prompt('Enter one of your other subjects')
+  let newRoom = prompt('What room is your subject in?')
+  let newStudent = prompt('How many students are in your class?')
+  subject.name = newName
+  subject.room = newRoom
+  subject.students = newStudent
+  newRoom = Number(newRoom)
+  newStudent = Number(newStudent)
+ 
+  alert('Your subject is ' + subject.name + ' it is in room ' + subject.room + ' there are ' + subject.students + ' students')
+}
+
+
+// #####################################
+// ####### ----- Find a Pet ----- ######
+// #####################################
+
+let petRegister = [
+  { name: 'Snuggles ', type: 'cat ', color: 'tabby', age: ' 2'},
+  { name: 'Socks ', type: 'cat ', color: 'black and white', age: ' 9'},
+  { name: 'Snoodle ', type: 'cat ', color: 'brown', age: ' 0'},
+  { name: 'Dogan ', type: 'dog ', color: 'brown', age: ' 8' },
+  { name: 'Reffrey ', type: 'dog ', color: 'tabby', age: ' 4'
+  },
+
+]
+
+function petSearch() {
+  let searchType = prompt('what color is your pet?')
+  let searchResult = ''
+
+  petRegister.forEach( (currentPet) => {
+    if (currentPet.color == searchType) {
+      searchResult += currentPet.name + currentPet.type + currentPet.color + currentPet.age + ', '
+    }
+  })
+ 
+  alert(searchResult)
+}
+
+// #####################################
+// ###### ----- Pet Register ----- #####
+// #####################################
+
+function addPet() {
+  let newName = prompt('What is your pets name?')
+  let newAge = prompt('What age is your pet?')
+  let newColor = prompt('What color is your pet?')
+  let newType = prompt('What type is your pet?')
+
+  let newPet = {
+    name: newName,
+    age: newAge,
+    color: newColor,
+    type: newType,
+  }
+
+  // add the pet object to the register array
+  alert (petRegeister)
+  petRegister.push(newPet)
+}
+
+function listPets() {
+  // loop through the register array and output each pet object
+
+alert (petRegister)
 }
